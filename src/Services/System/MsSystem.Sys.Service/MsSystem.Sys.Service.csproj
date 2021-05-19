@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MsSystem.Sys.IService\MsSystem.Sys.IService.csproj" />
+    <ProjectReference Include="..\MsSystem.Sys.Model\MsSystem.Sys.Model.csproj" />
+    <ProjectReference Include="..\MsSystem.Sys.Repository\MsSystem.Sys.Repository.csproj" />
+    <ProjectReference Include="..\MsSystem.Sys.Schedule.Infrastructure\MsSystem.Sys.Schedule.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

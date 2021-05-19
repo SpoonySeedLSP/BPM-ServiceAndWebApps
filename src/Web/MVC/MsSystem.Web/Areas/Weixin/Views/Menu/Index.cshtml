@@ -1,0 +1,68 @@
+﻿@model List<WxMenuDto>
+@{
+    Layout = "~/Views/Shared/_LayoutJQ.cshtml";
+}
+@section css{
+    <link href="~/src/wx/wxmenu.css" rel="stylesheet" asp-append-version="true" />
+}
+@section scripts{
+    <script>
+        $(function () {
+
+        });
+    </script>
+}
+<div class="wrapper-content">
+    <div class="row">
+        <div class="ibox">
+            <div class="ibox-title text-right">
+                @await Component.InvokeAsync("Menu")
+            </div>
+            <div class="ibox-content">
+                <div class="content-left">
+                    <div class="mobile">
+                        <div class="mobile-title">微信公众号</div>
+                        <div class="mobile-body"></div>
+                        <div class="mobile-menu">
+                            <div class="mobile-menu-keyboard"></div>
+                            <div class="mobile-menu-list">
+                                <div class="mobile-menu-list-item">
+                                    <div class="title">一级菜单</div>
+                                    <ul class="submenu">
+                                        <li class="active">菜单1</li>
+                                        <li>菜单2</li>
+                                        <li>菜单3</li>
+                                        <li>菜单4</li>
+                                    </ul>
+                                </div>
+                                <div class="mobile-menu-list-item">
+                                    <div class="title">二级菜单</div>
+                                    <ul class="submenu">
+                                        <li>菜单1</li>
+                                        <li>菜单2</li>
+                                        <li>菜单3</li>
+                                        <li>菜单4</li>
+                                    </ul>
+                                </div>
+                                <div class="mobile-menu-list-item">
+                                    <div class="title">三级菜单</div>
+                                    <ul class="submenu">
+                                        <li>菜单1</li>
+                                        <li>菜单2</li>
+                                        <li>菜单3</li>
+                                        <li>菜单4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-right">
+                    <div class="attr-box">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

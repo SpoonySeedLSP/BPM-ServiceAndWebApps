@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "请假申请填写",
+  "usingComponents": {
+    "wxc-button": "../../dist/packages/@minui/wxc-button/dist/index",
+    "wxc-icon": "../../dist/packages/@minui/wxc-icon/dist/index"
+  }
+}
